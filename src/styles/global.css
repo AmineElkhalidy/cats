@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Striker";
+  src: url("/fonts/Striker.otf") format("opentype");
+  display: swap;
+}
+
+@font-face {
+  font-family: "Obit";
+  src: url("/fonts/obit-400.otf") format("opentype");
+  font-weight: 400;
+  display: swap;
+}
+
+*,
+::before,
+::after {
+  border-width: 0;
+}
+
+body {
+  @apply leading-[normal] m-0;
+}
+
+.shadow-yellow:hover {
+  box-shadow: rgba(218, 246, 0, 0.5) 0px 5px 15px;
+}
+
+.shadow-yellow:hover::after {
+  box-shadow: rgba(218, 246, 0, 0.5) 0px 5px 15px;
+}
+
+.shadow-yellow:hover::before {
+  box-shadow: rgba(218, 246, 0, 0.5) 0px 5px 15px;
+}
